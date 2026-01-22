@@ -1,15 +1,14 @@
 import java.util.ArrayList;
 
-public class Main {
+public class Theatre {
     public static void main(String[] args) {
-        new ArrayList();
         Actor vasily = new Actor("Василий", "Попков", Gender.MALE, 187);
         Actor viktoria = new Actor("Виктория", "Поддубнова", Gender.FEMALE, 165);
         Actor aleksei = new Actor("Алексей", "Каменский", Gender.MALE, 191);
         Director petr = new Director("Petr", "Мовланов", Gender.MALE, 4);
         Director aleksandr = new Director("Александр", "Зюзиков", Gender.MALE, 44);
-        Director choreographer = new Director("Степан", "Попов", Gender.MALE, 33);
-        Director authorOfMusic = new Director("Влад", "Степнов", Gender.MALE, 14);
+        Person choreographer = new Person("Степан", "Попов", Gender.MALE);
+        Person authorOfMusic = new Person("Влад", "Степнов", Gender.MALE);
         Show simpleShow = new Show("Колобок", 180, petr);
         Opera opera = new Opera("Красная шапочка", 143, aleksandr, authorOfMusic, "Описание постановки красная шапочка", 12);
         Ballet ballet = new Ballet("Щелкунчик", 200, petr, authorOfMusic, "Описание баллета щелкунчик", choreographer);
